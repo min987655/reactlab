@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* 내가 잡는 박스 사이즈가 보더까지 포함 */
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url('../images/background.jpg');
+  height: 66em;
+  background-size: 100% 100%;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 3em;
+  list-style-type: none;
+}
+
+.menu ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+
+.search__box {
+  position: relative; /* 관계하는 포지션으로 잡음 */
+  top: 50px;
+  left: 50px;
+  width: 28em;
+  height: 35em;
+  background-color: white;
+}
